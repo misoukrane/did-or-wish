@@ -1,0 +1,13 @@
+<div class="item">
+  <div class="ui input content" [class.hide]="!editing">
+    <form #itemForm="ngForm">
+      <input type="text" class="in-place-input" required [(ngModel)]="inputText"
+        ngControl="inputText"  placeholder="Enter text" #spy (blur)="save()">
+    </form>
+  </div>
+  <div class="right-floated content" [class.hide]="editing">
+    <a href="javascript:void(0)" (click)="edit(spy)"><i class="olive pencil icon"></i></a>
+    <a href="javascript:void(0)" (click)="delete()"><i class="red trash icon"></i></a>
+  </div>
+  <div class="content" [class.hide]="editing">{{text}}</div>
+</div>

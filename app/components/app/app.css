@@ -1,0 +1,10 @@
+.hide {
+  display: none !important;
+}
+.smile {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: url("./assets/img/smile.png");
+}

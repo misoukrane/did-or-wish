@@ -1,0 +1,35 @@
+<div class="ui middle center aligned grid two column">
+  <div class="one column">
+    <navigation></navigation>
+    <h1>{{ createdAt | date:"jm yMMMMEEEEd" }}</h1>
+  </div>
+</div>
+<div class="ui  grid three column">
+  <div class="one column">
+    <div class="ui piled segment">
+      <h1 class="ui header">Did</h1>
+      <div class="ui list text-left-aligned">
+        <item *ngFor="#item of didCollection" [item]="item"></item>
+      </div>
+      <list-form [collection-ref]="didCollectionRef"></list-form>
+    </div>
+  </div>
+  <div class="one column">
+    <div class="ui piled segment">
+      <h1 class="ui header">Wish did</h1>
+      <div class="ui list text-left-aligned">
+        <item *ngFor="#item of wishCollection" [item]="item"></item>
+      </div>
+      <list-form [collection-ref]="wishCollectionRef"></list-form>
+    </div>
+  </div>
+  <div class="one column">
+    <div class="ui piled segment">
+      <h1 class="ui header">Shouldn't have done</h1>
+      <div class="ui list text-left-aligned">
+        <item *ngFor="#item of shouldntCollection" [item]="item"></item>
+      </div>
+      <list-form [collection-ref]="shouldntCollectionRef"></list-form>
+    </div>
+  </div>
+</div>

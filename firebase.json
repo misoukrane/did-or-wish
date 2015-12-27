@@ -1,0 +1,14 @@
+{
+  "firebase": "didorwish",
+  "public": "dist/prod",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ],
+  "rewrites": [{
+  "source": "**",
+  "destination": "/index.html"
+  }],
+  "rules": "rules.json"
+}

@@ -1,0 +1,15 @@
+<div class="ui vertical masthead center aligned segment">
+  <div class="ui container">
+    <div class="ui stackable menu">
+      <div class="grey item">
+        <smile class="smile"></smile>
+      </div>
+      <a class="item" [routerLink]="['/Home']" >Home</a>
+      <a class="item" [routerLink]="['/About']" >About</a>
+      <a class="item" [routerLink]="['/Dashboard']" [class.hide]="!loggedIn">Dashboard</a>
+      <a class="item" [routerLink]="['/Sign-In']" [class.hide]="loggedIn">Sign In</a>
+      <a class="item" (click)="signOut()" [class.hide]="!loggedIn">Sign Out</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

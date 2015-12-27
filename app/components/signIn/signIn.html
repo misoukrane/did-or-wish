@@ -1,0 +1,29 @@
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <smile class="smile"></smile>
+      <br><br>
+      <div class="content">
+        Sign in or create an account
+      </div>
+    </h2>
+    <br><br>
+    <form class="ui large form">
+      <div class="ui">
+        <div class="sign-in-button-container">
+          <button class="ui fluid facebook button icon circular" (click)="onOAuth('facebook')">
+            <i class="facebook icon"></i> Sign in with Facebook
+          </button>
+          <br>
+          <button class="ui fluid twitter button icon circular" (click)="onOAuth('twitter')">
+            <i class="twitter icon"></i> Sign in with Twitter
+          </button>
+          <br>
+          <button class="ui fluid google plus button icon circular" (click)="onOAuth('google')">
+            <i class="google plus icon"></i> Sign in with Google
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

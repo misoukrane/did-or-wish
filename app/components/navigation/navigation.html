@@ -1,0 +1,14 @@
+<div class="ui three item menu">
+  <a class="ui item animated fade button" (click)="createNewList()">
+      <div class="hidden content"><i class="plus icon"></i></div>
+      <div class="visible content"> Add New List</div>
+  </a>
+  <a class="ui item animated fade button" [routerLink]="['/Dashboard']">
+      <div class="hidden content"><i class="tasks icon"></i></div>
+      <div class="visible content">My Lists</div>
+  </a>
+  <!--<a class="ui item animated fade button">
+      <div class="hidden content"><i class="line chart icon"></i></div>
+      <div class="visible content">Stats</div>
+  </a>-->
+</div>

@@ -1,0 +1,16 @@
+<div class="ui middle center aligned grid two column">
+  <div class="one column">
+    <h1>Dashboard</h1>
+    <navigation></navigation>
+    <br>
+    <div class="ui relaxed list one column">
+      <div class="item left floated" *ngFor="#list of lists">
+        <i class="large check link middle aligned icon green" (click)="onEdit(list)"></i>
+        <i class="large trash link middle aligned icon red" (click)="onDelete(list)"></i>
+        <div class="content" style="text-align: left">
+          <a class="header" >{{ list.value.createdAt | date:"jm yMMMMEEEEd" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

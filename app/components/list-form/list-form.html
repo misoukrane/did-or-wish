@@ -1,0 +1,10 @@
+<form #listForm="ngForm">
+  <div class="ui input action">
+    <input type="text" required [(ngModel)]="itemText"
+      ngControl="itemText"  placeholder="Enter text" (keyup)="onKey($event)" #spy >
+    <div class="ui button" (click)="addItem(itemText)" [class.disabled]="!listForm.valid" [class.green]="listForm.valid">
+      <i class="icon plus"></i>
+      Add
+    </div>
+  </div>
+ </form>

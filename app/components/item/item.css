@@ -1,0 +1,21 @@
+.item {
+  border-bottom-width: thin;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  padding: 1% 1% 1% 1%;
+}
+.content {
+  display: inline;
+  font-size: 140%;
+}
+.right-floated {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.in-place-input {
+  width: 100%;
+  border: none !important;
+  padding: 0 !important;
+}

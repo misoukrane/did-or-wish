@@ -1,0 +1,17 @@
+.grid{
+    margin-top: 2.5em;
+}
+.column {
+    max-width: 450px;
+}
+.sign-in-button-container {
+  width: 60%;
+  margin: auto;
+}
+.smile {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: url("./assets/img/smile.png");
+}
