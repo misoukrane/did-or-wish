@@ -8,7 +8,7 @@
         <i class="large check link middle aligned icon green" (click)="onEdit(list)"></i>
         <i class="large trash link middle aligned icon red" (click)="onDelete(list)"></i>
         <div class="content" style="text-align: left">
-          <a class="header" >{{ list.value.createdAt | date:"jm yMMMMEEEEd" }}</a>
+          <a class="header" (click)="onEdit(list)">{{ list.value.createdAt | date:"jm yMMMMEEEEd" }}</a>
         </div>
       </div>
     </div>

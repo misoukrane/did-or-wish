@@ -1,4 +1,4 @@
-# Did or WIsh
+# Did or Wish
 
 This is my first app using angular 2 and Firebase, I was just playing around and I thought that it would be a cool app to build.
 
