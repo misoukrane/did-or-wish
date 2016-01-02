@@ -23,7 +23,7 @@ export class SignInCmp {
       if (error) {
         console.log(error);
       } else {
-        this.references.getUserRef().set({info: this.ref.getAuth()}, (err) => {
+        this.references.getUserRef().update({info: this.ref.getAuth()}, (err) => {
           this.router.navigate(['/Dashboard']);
         });
       }
